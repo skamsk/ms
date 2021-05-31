@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -10,13 +10,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" /> <!-- https://getbootstrap.com/ -->
     <link href="fontawesome/css/all.min.css" rel="stylesheet" /> <!-- https://fontawesome.com/ -->
     <link href="css/templatemo-diagoona.css" rel="stylesheet" />
-<!--
-
-TemplateMo 550 Diagoona
-
-https://templatemo.com/tm-550-diagoona
-
--->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="tm-container">
@@ -24,68 +18,115 @@ https://templatemo.com/tm-550-diagoona
             <div class="tm-row pt-4">
                 <div class="tm-col-left">
                     <div class="tm-site-header media">
-                        <i class="fas fa-umbrella-beach fa-3x mt-1 tm-logo"></i>
+                        <!-- <i class="fas fa-umbrella-beach fa-3x mt-1 tm-logo"></i> -->
                         <div class="media-body">
-                            <h1 class="tm-sitename text-uppercase">diagoona</h1>
-                            <p class="tm-slogon">new bootstrap template</p>
-                        </div>        
+                            <h1 class="tm-sitename">Маджуга Сергей Сергеевич </h1>
+                            <p class="tm-slogon mb-0">Юридические услуги любой сложности</p>
+                            <div class="col-3 main-contacts">
+                                <li>
+                                    <img src="img/phone.svg" alt="logo: phone" class="phone-icon">
+                                    <a href="tel:+79028034530">
+                                        <span class="phone-num">
+                                            8 (902) 803-45-30
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img src="img/email.svg" alt="logo: phone" class="footer-logo">
+                                    <a href="mailto:info@mamamama.ru">
+                                        <span class="phone-num">
+                                            info@mamamama.ru
+                                        </span>
+                                    </a>
+                                </li>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="tm-col-right">
                     <nav class="navbar navbar-expand-lg" id="tm-main-nav">
-                        <button class="navbar-toggler toggler-example mr-0 ml-auto" type="button" 
-                            data-toggle="collapse" data-target="#navbar-nav" 
-                            aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler toggler-example mr-0 ml-auto" type="button" data-toggle="collapse"
+                            data-target="#navbar-nav" aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
                             <span><i class="fas fa-bars"></i></span>
                         </button>
                         <div class="collapse navbar-collapse tm-nav" id="navbar-nav">
                             <ul class="navbar-nav text-uppercase">
-                                <li class="nav-item">
-                                    <a class="nav-link tm-nav-link" href="index.html">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link tm-nav-link" href="about.html">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link tm-nav-link" href="services.html">Services</a>
-                                </li>                            
                                 <li class="nav-item active">
-                                    <a class="nav-link tm-nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+                                    <a class="nav-link tm-nav-link" href="index.html">Услуги <span class="sr-only">(current)</span></a>
                                 </li>
-                            </ul>                            
-                        </div>                        
+                                <li class="nav-item">
+                                    <a class="nav-link tm-nav-link" href="about.html">Обо мне</a>
+                                </li>
+                                <!-- <li class="nav-item">
+                                                                <a class="nav-link tm-nav-link" href="services.html">Services</a>
+                                                            </li>                             -->
+                                <li class="nav-item">
+                                    <a class="nav-link tm-nav-link" href="contact.html">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
                     </nav>
                 </div>
             </div>
             
             <div class="tm-row">
-                <div class="tm-col-left">
-                    <div>
-                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0105ae911adc702f1b42909b8671aa9b6ea5815360d03c648819ab0fbe05b5d6&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
-                    </div>
+                <div class="tm-col-left tm-contact-main ml-5 mt-5">
+                    <form id="contact-form" action="" method="POST">
+                        <h2 class="mt-1 tm-content-title align-items-center mt-5">КОНСУЛЬТАЦИЯ АДВОКАТА</h2>
+                        <p>Первичный анализ дела совершенно бесплатен и ни к чему вас не обязывает</p>
+                        <!-- <hr class="mb-1"> -->
+                        <div class="mt-3 form-group mb-4">
+                            <input type="text" name="name" class="form-control" placeholder="Представтесь" required="" />
+                        </div>
+                        <div class="form-group mb-4">
+                            <input type="phone" name="phone" class="form-control" placeholder="Как с вами связаться?" required="" />
+                        </div>
+                        <div class="form-group mb-5">
+                            <textarea rows="6" name="message" class="form-control" placeholder="Опишите суть вашего вопроса." required=""></textarea>
+                        </div>
+                        <div class="text-right">
+                            <button type="submit" class="btn btn-big btn-primary">Отправить</button>
+                        </div>
+                    </form>
                 </div>
                 <main class="tm-col-right tm-contact-main"> <!-- Content -->
                     <section class="tm-content tm-contact">
-                        <h2 class="mb-4 tm-content-title">Contact Us</h2>
-                        <p class="mb-85">Etiam et egestas arcu. Fusce congue quis elit vitae commodo. Cras neque mauris, vehicula in ipsum sit amet, faucibus aliquam arcu.</p>
-                        <form id="contact-form" action="" method="POST">
-                            <div class="form-group mb-4">
-                                <input type="text" name="name" class="form-control" placeholder="Name" required="" />
+                        <!-- <h2 class="mb-4 tm-content-title">Контакты</h2> -->
+                        <div class="media my-3 tm-service-media tm-service-media-img-l">
+                            <img width="150" src="img/foto_contacts.jpg" alt="Image" class="tm-service-img">
+                            <div class="media-body tm-service-text">
+                                <h2 class="mb-4 tm-content-title">Контакты:</h2>
+                                <p>Телефон: 8(342)271-1279</p>
+                                <p>Email: xxx@xxxxxx.ru</p>
+
+                                <p>Россия, 614000, г. Пермь,
+                                ул. Ленина, 10</p>
+                            </div>
+                            
+                        </div>
+                        <p class="mt-5">
+                            <script type="text/javascript" charset="utf-8" async
+                                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0105ae911adc702f1b42909b8671aa9b6ea5815360d03c648819ab0fbe05b5d6&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+                        </p>
+                        <!-- <form id="contact-form" action="" method="POST">
+                            <h2 class="mt-1 tm-content-title">КОНСУЛЬТАЦИЯ АДВОКАТА</h2>
+                            <p>Первичный анализ дела совершенно бесплатен и ни к чему вас не обязывает</p>
+                            <hr class="mb-1">
+                            <div class="mt-3 form-group mb-4">
+                                <input type="text" name="name" class="form-control" placeholder="Представтесь" required="" />
                             </div>
                             <div class="form-group mb-4">
-                                <input type="email" name="email" class="form-control" placeholder="Email" required="" />
+                                <input type="phone" name="phone" class="form-control" placeholder="Как с вами связаться?" required="" />
                             </div>
                             <div class="form-group mb-5">
-                                <textarea rows="6" name="message" class="form-control" placeholder="Message..." required=""></textarea>
+                                <textarea rows="6" name="message" class="form-control" placeholder="Опишите суть вашего вопроса." required=""></textarea>
                             </div>
                             <div class="text-right">
-                                <button type="submit" class="btn btn-big btn-primary">Send It</button>
+                                <button type="submit" class="btn btn-big btn-primary">Отправить</button>
                             </div>
-                        </form>
+                        </form> -->
                     </section>
-                    <section>
-                        
-                    </section>
+                    
                 </main>
             </div>
         </div>        
